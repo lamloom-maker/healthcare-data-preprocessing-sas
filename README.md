@@ -20,6 +20,10 @@ such as cholesterol, glucose levels, blood pressure, body measurements, and demo
 - PROC MEANS, PROC FREQ, PROC CORR
 - PROC SGPLOT for visual exploration
 
+## How to Run
+1. Ensure the dataset is located at `data/diabetes_upd.csv`.
+2. Run the SAS script: `sas/data_preprocessing.sas`.
+
 ## Tools
 - SAS
 - CSV dataset
