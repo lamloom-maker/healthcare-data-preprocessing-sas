@@ -1,0 +1,4266 @@
+<!DOCTYPE html>
+<html class="ods_59800e67-2896-4c1e-b131-668fc7975849" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: Final_Project.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c section > table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c section > pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c div > table,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c div > pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c article > table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c article > pre,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j section > table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j section > pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j div > table,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j div > pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j article > table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j article > pre,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c p.note, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c p.warning, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c p.error, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c p.fatal,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j p.note, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j p.warning, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j p.error, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j p.fatal,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body.c > table.layoutcontainer, .ods_59800e67-2896-4c1e-b131-668fc7975849 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.l table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.l pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.l p.note,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.l p.warning, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.l p.error, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.c table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.c pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.c p.note,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.c p.warning, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.c p.error, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r p.note,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r table, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r pre, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r p.note,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r p.warning, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r p.error, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 article, .ods_59800e67-2896-4c1e-b131-668fc7975849 aside, .ods_59800e67-2896-4c1e-b131-668fc7975849 details, .ods_59800e67-2896-4c1e-b131-668fc7975849 figcaption, .ods_59800e67-2896-4c1e-b131-668fc7975849 figure, .ods_59800e67-2896-4c1e-b131-668fc7975849 footer, .ods_59800e67-2896-4c1e-b131-668fc7975849 header, .ods_59800e67-2896-4c1e-b131-668fc7975849 hgroup, .ods_59800e67-2896-4c1e-b131-668fc7975849 nav, .ods_59800e67-2896-4c1e-b131-668fc7975849 section { display: block }
+html.ods_59800e67-2896-4c1e-b131-668fc7975849 { font-size: 100% }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 ul, .ods_59800e67-2896-4c1e-b131-668fc7975849 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 dd { margin: 0 0 0 40px }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 nav ul, .ods_59800e67-2896-4c1e-b131-668fc7975849 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 img { border: 0; vertical-align: middle }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 svg:not(:root) { overflow: hidden }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 figure { margin: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 table { border-collapse: collapse; border-spacing: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 p { margin-top: 0; text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 h1.heading1 { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 h2.heading2 { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 h3.heading3 { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 h4.heading4 { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 h5.heading5 { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 h6.heading6 { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 span { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 table { margin-bottom: 1em }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 td, .ods_59800e67-2896-4c1e-b131-668fc7975849 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 td[class$="fixed"], .ods_59800e67-2896-4c1e-b131-668fc7975849 th[class$="fixed"] { white-space: pre }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 section, .ods_59800e67-2896-4c1e-b131-668fc7975849 article { padding-top: 1px; padding-bottom: 8px }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .stacked-value { text-align: left; display: block }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .stacked-cell > .stacked-value, .ods_59800e67-2896-4c1e-b131-668fc7975849 td.data > td.data, .ods_59800e67-2896-4c1e-b131-668fc7975849 th.data > td.data, .ods_59800e67-2896-4c1e-b131-668fc7975849 th.data > th.data, .ods_59800e67-2896-4c1e-b131-668fc7975849 td.data > th.data, .ods_59800e67-2896-4c1e-b131-668fc7975849 th.header > th.header { border: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .stacked-cell > div.data { border-width: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > p { margin: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .batch { display: table }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .toc { display: none }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .proc_note_group, .ods_59800e67-2896-4c1e-b131-668fc7975849 .proc_title_group { margin-bottom: 1em }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 p.proctitle { margin: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 p.note, .ods_59800e67-2896-4c1e-b131-668fc7975849 p.warning, .ods_59800e67-2896-4c1e-b131-668fc7975849 p.error, .ods_59800e67-2896-4c1e-b131-668fc7975849 p.fatal { display: table }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .notebanner, .ods_59800e67-2896-4c1e-b131-668fc7975849 .warnbanner, .ods_59800e67-2896-4c1e-b131-668fc7975849 .errorbanner, .ods_59800e67-2896-4c1e-b131-668fc7975849 .fatalbanner,
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .notecontent, .ods_59800e67-2896-4c1e-b131-668fc7975849 .warncontent, .ods_59800e67-2896-4c1e-b131-668fc7975849 .errorcontent, .ods_59800e67-2896-4c1e-b131-668fc7975849 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .notebanner, .ods_59800e67-2896-4c1e-b131-668fc7975849 .warnbanner, .ods_59800e67-2896-4c1e-b131-668fc7975849 .errorbanner, .ods_59800e67-2896-4c1e-b131-668fc7975849 .fatalbanner { padding-right: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body > div > ol li { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .c { text-align: center }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .r { text-align: right }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .l { text-align: left }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .j { text-align: justify }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .d { text-align: right }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .b { vertical-align: bottom }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .m { vertical-align: middle }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .t { vertical-align: top }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 a:active { color: #800080 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .batch > tbody, .ods_59800e67-2896-4c1e-b131-668fc7975849 .batch > thead, .ods_59800e67-2896-4c1e-b131-668fc7975849 .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .batch { border: hidden; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > colgroup > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > colgroup, .ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > * > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > thead, .ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > tbody, .ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer > tfoot { border: none; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .cell, .ods_59800e67-2896-4c1e-b131-668fc7975849 .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .contentfolder, .ods_59800e67-2896-4c1e-b131-668fc7975849 .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .contentproclabel, .ods_59800e67-2896-4c1e-b131-668fc7975849 .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .data, .ods_59800e67-2896-4c1e-b131-668fc7975849 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .graph > tbody, .ods_59800e67-2896-4c1e-b131-668fc7975849 .graph > thead, .ods_59800e67-2896-4c1e-b131-668fc7975849 .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .graph { border: hidden; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .heading1, .ods_59800e67-2896-4c1e-b131-668fc7975849 .heading2, .ods_59800e67-2896-4c1e-b131-668fc7975849 .heading3, .ods_59800e67-2896-4c1e-b131-668fc7975849 .heading4, .ods_59800e67-2896-4c1e-b131-668fc7975849 .heading5, .ods_59800e67-2896-4c1e-b131-668fc7975849 .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .indexaction, .ods_59800e67-2896-4c1e-b131-668fc7975849 .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutcontainer, .ods_59800e67-2896-4c1e-b131-668fc7975849 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 a:link { color: #0000ff }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .list3, .ods_59800e67-2896-4c1e-b131-668fc7975849 .list4, .ods_59800e67-2896-4c1e-b131-668fc7975849 .list5, .ods_59800e67-2896-4c1e-b131-668fc7975849 .list6, .ods_59800e67-2896-4c1e-b131-668fc7975849 .list7, .ods_59800e67-2896-4c1e-b131-668fc7975849 .list8, .ods_59800e67-2896-4c1e-b131-668fc7975849 .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem3, .ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem4, .ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem5, .ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem6, .ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem7, .ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem8, .ods_59800e67-2896-4c1e-b131-668fc7975849 .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .output > tbody, .ods_59800e67-2896-4c1e-b131-668fc7975849 .output > thead, .ods_59800e67-2896-4c1e-b131-668fc7975849 .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .output { border: hidden; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .pagesproclabel, .ods_59800e67-2896-4c1e-b131-668fc7975849 .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > colgroup > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > colgroup, .ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > * > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > thead, .ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > tbody, .ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip > tfoot { border: none; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter10, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter2, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter3, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter4, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter5, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter6, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter7, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter8, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle10, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle2, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle3, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle4, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle5, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle6, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle7, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle8, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > colgroup > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > colgroup, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > * > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > thead, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > tbody, .ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer > tfoot { border: none; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .table > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .table > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .table { border: hidden; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > colgroup > col, .ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > colgroup, .ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > * > tr, .ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > thead, .ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > tbody, .ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer > tfoot { border: none; }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 a:visited { color: #800080 }
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_59800e67-2896-4c1e-b131-668fc7975849 .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_59800e67-2896-4c1e-b131-668fc7975849" class="c body">
+<h1 class="body toc">Results: Final_Project.sas</h1>
+<section data-name="Print" data-sec-type="proc">
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX" aria-label="Data Set WORK.DIABET">
+<h1 class="contentitem toc">Data Set WORK.DIABET</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.DIABET">
+<caption aria-label="Data Set WORK.DIABET"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">id</th>
+<th class="r header" scope="col">chol</th>
+<th class="r header" scope="col">stab.glu</th>
+<th class="r header" scope="col">hdl</th>
+<th class="r header" scope="col">ratio</th>
+<th class="r header" scope="col">glyhb</th>
+<th class="header" scope="col">location</th>
+<th class="r header" scope="col">age</th>
+<th class="header" scope="col">gender</th>
+<th class="r header" scope="col">weight</th>
+<th class="r header" scope="col">height</th>
+<th class="header" scope="col">frame</th>
+<th class="r header" scope="col">bp.1s</th>
+<th class="r header" scope="col">bp.1d</th>
+<th class="r header" scope="col">bp.2s</th>
+<th class="r header" scope="col">bp.2d</th>
+<th class="r header" scope="col">waist</th>
+<th class="r header" scope="col">hip</th>
+<th class="r header" scope="col">time.ppn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1000</td>
+<td class="r data">203</td>
+<td class="r data">82</td>
+<td class="r data">56</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.309999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">46</td>
+<td class="data">female</td>
+<td class="r data">62</td>
+<td class="r data">121</td>
+<td class="data">medium</td>
+<td class="r data">118</td>
+<td class="r data">59</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">29</td>
+<td class="r data">38</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">1001</td>
+<td class="r data">165</td>
+<td class="r data">97</td>
+<td class="r data">24</td>
+<td class="r data">6.900000095</td>
+<td class="r data">4.440000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">29</td>
+<td class="data">female</td>
+<td class="r data">64</td>
+<td class="r data">218</td>
+<td class="data">large</td>
+<td class="r data">112</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">48</td>
+<td class="r data">360</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">1002</td>
+<td class="r data">228</td>
+<td class="r data">92</td>
+<td class="r data">37</td>
+<td class="r data">6.199999809</td>
+<td class="r data">4.639999867</td>
+<td class="data">Buckingham</td>
+<td class="r data">58</td>
+<td class="data">female</td>
+<td class="r data">61</td>
+<td class="r data">256</td>
+<td class="data">large</td>
+<td class="r data">190</td>
+<td class="r data">92</td>
+<td class="r data">185</td>
+<td class="r data">92</td>
+<td class="r data">49</td>
+<td class="r data">57</td>
+<td class="r data">180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">1003</td>
+<td class="r data">78</td>
+<td class="r data">93</td>
+<td class="r data">12</td>
+<td class="r data">6.5</td>
+<td class="r data">4.630000114</td>
+<td class="data">Buckingham</td>
+<td class="r data">67</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">119</td>
+<td class="data">large</td>
+<td class="r data">110</td>
+<td class="r data">50</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">33</td>
+<td class="r data">38</td>
+<td class="r data">480</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">1005</td>
+<td class="r data">249</td>
+<td class="r data">90</td>
+<td class="r data">28</td>
+<td class="r data">8.899999619</td>
+<td class="r data">7.71999979</td>
+<td class="data">Buckingham</td>
+<td class="r data">64</td>
+<td class="data">male</td>
+<td class="r data">68</td>
+<td class="r data">183</td>
+<td class="data">medium</td>
+<td class="r data">138</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">44</td>
+<td class="r data">41</td>
+<td class="r data">300</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Contents" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX1" class="proc_title_group">
+<p class="c proctitle">The CONTENTS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Contents Procedure</h1>
+<section>
+<h1 class="contentfolder toc">WORK.DIABET</h1>
+<article aria-label="Attributes">
+<h1 class="contentitem toc">Attributes</h1>
+<table class="table" style="border-spacing: 0" aria-label="Attributes">
+<caption aria-label="Attributes"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Name</th>
+<td class="data">WORK.DIABET</td>
+<th class="rowheader" scope="row">Observations</th>
+<td class="data">403</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Member Type</th>
+<td class="data">DATA</td>
+<th class="rowheader" scope="row">Variables</th>
+<td class="data">19</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Engine</th>
+<td class="data">V9</td>
+<th class="rowheader" scope="row">Indexes</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Created</th>
+<td class="data">05/11/2024 14:45:32</td>
+<th class="rowheader" scope="row">Observation Length</th>
+<td class="data">152</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Last Modified</th>
+<td class="data">05/11/2024 14:45:32</td>
+<th class="rowheader" scope="row">Deleted Observations</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Protection</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">Compressed</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Set Type</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">Sorted</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Label</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Representation</th>
+<td class="data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Encoding</th>
+<td class="data">utf-8  Unicode (UTF-8)</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX2" aria-label="Engine/Host Information">
+<h1 class="contentitem toc">Engine/Host Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Engine/Host Information">
+<caption aria-label="Engine/Host Information"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Engine/Host Dependent Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Page Size</th>
+<td class="data">131072</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Pages</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">First Data Page</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Max Obs per Page</th>
+<td class="data">861</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Obs in First Data Page</th>
+<td class="data">403</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Repairs</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Filename</th>
+<td class="data">/saswork/SAS_work4B2600001624_odaws01-apse1.oda.sas.com/SAS_work845F00001624_odaws01-apse1.oda.sas.com/diabet.sas7bdat</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Release Created</th>
+<td class="data">9.0401M7</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Host Created</th>
+<td class="data">Linux</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Inode Number</th>
+<td class="data">1074862665</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Access Permission</th>
+<td class="data">rw-r--r--</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Owner Name</th>
+<td class="data">u63845287</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size</th>
+<td class="data">256KB</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size (bytes)</th>
+<td class="data">262144</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX3" aria-label="Variables">
+<h1 class="contentitem toc">Variables</h1>
+<table class="table" style="border-spacing: 0" aria-label="Variables">
+<caption aria-label="Variables"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Alphabetic List of Variables and Attributes</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="b header" scope="col">Variable</th>
+<th class="b header" scope="col">Type</th>
+<th class="r b header" scope="col">Len</th>
+<th class="b header" scope="col">Format</th>
+<th class="b header" scope="col">Informat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">age</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">bp.1d</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">bp.1s</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">bp.2d</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">bp.2s</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">chol</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">frame</td>
+<td class="data">Char</td>
+<td class="r data">6</td>
+<td class="data">$6.</td>
+<td class="data">$6.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">gender</td>
+<td class="data">Char</td>
+<td class="r data">6</td>
+<td class="data">$6.</td>
+<td class="data">$6.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">glyhb</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">hdl</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">height</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">hip</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">id</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">location</td>
+<td class="data">Char</td>
+<td class="r data">10</td>
+<td class="data">$10.</td>
+<td class="data">$10.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">ratio</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">stab.glu</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">time.ppn</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">waist</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">weight</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX4" aria-label="Data Set WORK.NEWDIBET">
+<h1 class="contentitem toc">Data Set WORK.NEWDIBET</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.NEWDIBET">
+<caption aria-label="Data Set WORK.NEWDIBET"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">id</th>
+<th class="r header" scope="col">chol</th>
+<th class="r header" scope="col">stab.glu</th>
+<th class="r header" scope="col">hdl</th>
+<th class="r header" scope="col">ratio</th>
+<th class="r header" scope="col">glyhb</th>
+<th class="header" scope="col">location</th>
+<th class="r header" scope="col">age</th>
+<th class="header" scope="col">gender</th>
+<th class="r header" scope="col">weight</th>
+<th class="r header" scope="col">height</th>
+<th class="header" scope="col">frame</th>
+<th class="r header" scope="col">bp.1s</th>
+<th class="r header" scope="col">bp.1d</th>
+<th class="r header" scope="col">bp.2s</th>
+<th class="r header" scope="col">bp.2d</th>
+<th class="r header" scope="col">waist</th>
+<th class="r header" scope="col">hip</th>
+<th class="r header" scope="col">time.ppn</th>
+<th class="r header" scope="col">complete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1000</td>
+<td class="r data">203</td>
+<td class="r data">82</td>
+<td class="r data">56</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.309999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">46</td>
+<td class="data">female</td>
+<td class="r data">62</td>
+<td class="r data">121</td>
+<td class="data">medium</td>
+<td class="r data">118</td>
+<td class="r data">59</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">29</td>
+<td class="r data">38</td>
+<td class="r data">720</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">1001</td>
+<td class="r data">165</td>
+<td class="r data">97</td>
+<td class="r data">24</td>
+<td class="r data">6.900000095</td>
+<td class="r data">4.440000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">29</td>
+<td class="data">female</td>
+<td class="r data">64</td>
+<td class="r data">218</td>
+<td class="data">large</td>
+<td class="r data">112</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">48</td>
+<td class="r data">360</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">1002</td>
+<td class="r data">228</td>
+<td class="r data">92</td>
+<td class="r data">37</td>
+<td class="r data">6.199999809</td>
+<td class="r data">4.639999867</td>
+<td class="data">Buckingham</td>
+<td class="r data">58</td>
+<td class="data">female</td>
+<td class="r data">61</td>
+<td class="r data">256</td>
+<td class="data">large</td>
+<td class="r data">190</td>
+<td class="r data">92</td>
+<td class="r data">185</td>
+<td class="r data">92</td>
+<td class="r data">49</td>
+<td class="r data">57</td>
+<td class="r data">180</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">1003</td>
+<td class="r data">78</td>
+<td class="r data">93</td>
+<td class="r data">12</td>
+<td class="r data">6.5</td>
+<td class="r data">4.630000114</td>
+<td class="data">Buckingham</td>
+<td class="r data">67</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">119</td>
+<td class="data">large</td>
+<td class="r data">110</td>
+<td class="r data">50</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">33</td>
+<td class="r data">38</td>
+<td class="r data">480</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">1005</td>
+<td class="r data">249</td>
+<td class="r data">90</td>
+<td class="r data">28</td>
+<td class="r data">8.899999619</td>
+<td class="r data">7.71999979</td>
+<td class="data">Buckingham</td>
+<td class="r data">64</td>
+<td class="data">male</td>
+<td class="r data">68</td>
+<td class="r data">183</td>
+<td class="data">medium</td>
+<td class="r data">138</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">44</td>
+<td class="r data">41</td>
+<td class="r data">300</td>
+<td class="r data">0</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX5" aria-label="Data Set WORK.NEWDIBET">
+<h1 class="contentitem toc">Data Set WORK.NEWDIBET</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.NEWDIBET">
+<caption aria-label="Data Set WORK.NEWDIBET"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">id</th>
+<th class="r header" scope="col">chol</th>
+<th class="r header" scope="col">stab.glu</th>
+<th class="r header" scope="col">hdl</th>
+<th class="r header" scope="col">ratio</th>
+<th class="r header" scope="col">glyhb</th>
+<th class="header" scope="col">location</th>
+<th class="r header" scope="col">age</th>
+<th class="header" scope="col">gender</th>
+<th class="r header" scope="col">weight</th>
+<th class="r header" scope="col">height</th>
+<th class="header" scope="col">frame</th>
+<th class="r header" scope="col">bp.1s</th>
+<th class="r header" scope="col">bp.1d</th>
+<th class="r header" scope="col">bp.2s</th>
+<th class="r header" scope="col">bp.2d</th>
+<th class="r header" scope="col">waist</th>
+<th class="r header" scope="col">hip</th>
+<th class="r header" scope="col">time.ppn</th>
+<th class="r header" scope="col">complete</th>
+<th class="r header" scope="col">miss_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1000</td>
+<td class="r data">203</td>
+<td class="r data">82</td>
+<td class="r data">56</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.309999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">46</td>
+<td class="data">female</td>
+<td class="r data">62</td>
+<td class="r data">121</td>
+<td class="data">medium</td>
+<td class="r data">118</td>
+<td class="r data">59</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">29</td>
+<td class="r data">38</td>
+<td class="r data">720</td>
+<td class="r data">0</td>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">1001</td>
+<td class="r data">165</td>
+<td class="r data">97</td>
+<td class="r data">24</td>
+<td class="r data">6.900000095</td>
+<td class="r data">4.440000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">29</td>
+<td class="data">female</td>
+<td class="r data">64</td>
+<td class="r data">218</td>
+<td class="data">large</td>
+<td class="r data">112</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">48</td>
+<td class="r data">360</td>
+<td class="r data">0</td>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">1002</td>
+<td class="r data">228</td>
+<td class="r data">92</td>
+<td class="r data">37</td>
+<td class="r data">6.199999809</td>
+<td class="r data">4.639999867</td>
+<td class="data">Buckingham</td>
+<td class="r data">58</td>
+<td class="data">female</td>
+<td class="r data">61</td>
+<td class="r data">256</td>
+<td class="data">large</td>
+<td class="r data">190</td>
+<td class="r data">92</td>
+<td class="r data">185</td>
+<td class="r data">92</td>
+<td class="r data">49</td>
+<td class="r data">57</td>
+<td class="r data">180</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">1003</td>
+<td class="r data">78</td>
+<td class="r data">93</td>
+<td class="r data">12</td>
+<td class="r data">6.5</td>
+<td class="r data">4.630000114</td>
+<td class="data">Buckingham</td>
+<td class="r data">67</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">119</td>
+<td class="data">large</td>
+<td class="r data">110</td>
+<td class="r data">50</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">33</td>
+<td class="r data">38</td>
+<td class="r data">480</td>
+<td class="r data">0</td>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">1005</td>
+<td class="r data">249</td>
+<td class="r data">90</td>
+<td class="r data">28</td>
+<td class="r data">8.899999619</td>
+<td class="r data">7.71999979</td>
+<td class="data">Buckingham</td>
+<td class="r data">64</td>
+<td class="data">male</td>
+<td class="r data">68</td>
+<td class="r data">183</td>
+<td class="data">medium</td>
+<td class="r data">138</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">44</td>
+<td class="r data">41</td>
+<td class="r data">300</td>
+<td class="r data">0</td>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">1008</td>
+<td class="r data">248</td>
+<td class="r data">94</td>
+<td class="r data">69</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.809999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">34</td>
+<td class="data">male</td>
+<td class="r data">71</td>
+<td class="r data">190</td>
+<td class="data">large</td>
+<td class="r data">132</td>
+<td class="r data">86</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">36</td>
+<td class="r data">42</td>
+<td class="r data">195</td>
+<td class="r data">0</td>
+<td class="r data">2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">1011</td>
+<td class="r data">195</td>
+<td class="r data">92</td>
+<td class="r data">41</td>
+<td class="r data">4.800000191</td>
+<td class="r data">4.840000153</td>
+<td class="data">Buckingham</td>
+<td class="r data">30</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">191</td>
+<td class="data">medium</td>
+<td class="r data">161</td>
+<td class="r data">112</td>
+<td class="r data">161</td>
+<td class="r data">112</td>
+<td class="r data">46</td>
+<td class="r data">49</td>
+<td class="r data">720</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">1015</td>
+<td class="r data">227</td>
+<td class="r data">75</td>
+<td class="r data">44</td>
+<td class="r data">5.199999809</td>
+<td class="r data">3.940000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">37</td>
+<td class="data">male</td>
+<td class="r data">59</td>
+<td class="r data">170</td>
+<td class="data">medium</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">34</td>
+<td class="r data">39</td>
+<td class="r data">1020</td>
+<td class="r data">0</td>
+<td class="r data">4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">1016</td>
+<td class="r data">177</td>
+<td class="r data">87</td>
+<td class="r data">49</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.840000153</td>
+<td class="data">Buckingham</td>
+<td class="r data">45</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">166</td>
+<td class="data">large</td>
+<td class="r data">160</td>
+<td class="r data">80</td>
+<td class="r data">128</td>
+<td class="r data">86</td>
+<td class="r data">34</td>
+<td class="r data">40</td>
+<td class="r data">300</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">1022</td>
+<td class="r data">263</td>
+<td class="r data">89</td>
+<td class="r data">40</td>
+<td class="r data">6.599999905</td>
+<td class="r data">5.78000021</td>
+<td class="data">Buckingham</td>
+<td class="r data">55</td>
+<td class="data">female</td>
+<td class="r data">63</td>
+<td class="r data">202</td>
+<td class="data">small</td>
+<td class="r data">108</td>
+<td class="r data">72</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">45</td>
+<td class="r data">50</td>
+<td class="r data">240</td>
+<td class="r data">0</td>
+<td class="r data">2</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Means" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX6" class="proc_title_group">
+<p class="c proctitle">The MEANS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Means Procedure</h1>
+<article aria-label="Summary statistics">
+<h1 class="contentitem toc">Summary statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Summary statistics">
+<caption aria-label="Summary statistics"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Analysis Variable : complete</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">130.0000000</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX7" aria-label="Data Set WORK.HAVE_FRAME">
+<h1 class="contentitem toc">Data Set WORK.HAVE_FRAME</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.HAVE_FRAME">
+<caption aria-label="Data Set WORK.HAVE_FRAME"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">id</th>
+<th class="r header" scope="col">chol</th>
+<th class="r header" scope="col">stab.glu</th>
+<th class="r header" scope="col">hdl</th>
+<th class="r header" scope="col">ratio</th>
+<th class="r header" scope="col">glyhb</th>
+<th class="header" scope="col">location</th>
+<th class="r header" scope="col">age</th>
+<th class="header" scope="col">gender</th>
+<th class="r header" scope="col">weight</th>
+<th class="r header" scope="col">height</th>
+<th class="header" scope="col">frame</th>
+<th class="r header" scope="col">bp.1s</th>
+<th class="r header" scope="col">bp.1d</th>
+<th class="r header" scope="col">bp.2s</th>
+<th class="r header" scope="col">bp.2d</th>
+<th class="r header" scope="col">waist</th>
+<th class="r header" scope="col">hip</th>
+<th class="r header" scope="col">time.ppn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1000</td>
+<td class="r data">203</td>
+<td class="r data">82</td>
+<td class="r data">56</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.309999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">46</td>
+<td class="data">female</td>
+<td class="r data">62</td>
+<td class="r data">121</td>
+<td class="data">medium</td>
+<td class="r data">118</td>
+<td class="r data">59</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">29</td>
+<td class="r data">38</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">1001</td>
+<td class="r data">165</td>
+<td class="r data">97</td>
+<td class="r data">24</td>
+<td class="r data">6.900000095</td>
+<td class="r data">4.440000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">29</td>
+<td class="data">female</td>
+<td class="r data">64</td>
+<td class="r data">218</td>
+<td class="data">large</td>
+<td class="r data">112</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">48</td>
+<td class="r data">360</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">1002</td>
+<td class="r data">228</td>
+<td class="r data">92</td>
+<td class="r data">37</td>
+<td class="r data">6.199999809</td>
+<td class="r data">4.639999867</td>
+<td class="data">Buckingham</td>
+<td class="r data">58</td>
+<td class="data">female</td>
+<td class="r data">61</td>
+<td class="r data">256</td>
+<td class="data">large</td>
+<td class="r data">190</td>
+<td class="r data">92</td>
+<td class="r data">185</td>
+<td class="r data">92</td>
+<td class="r data">49</td>
+<td class="r data">57</td>
+<td class="r data">180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">1003</td>
+<td class="r data">78</td>
+<td class="r data">93</td>
+<td class="r data">12</td>
+<td class="r data">6.5</td>
+<td class="r data">4.630000114</td>
+<td class="data">Buckingham</td>
+<td class="r data">67</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">119</td>
+<td class="data">large</td>
+<td class="r data">110</td>
+<td class="r data">50</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">33</td>
+<td class="r data">38</td>
+<td class="r data">480</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">1005</td>
+<td class="r data">249</td>
+<td class="r data">90</td>
+<td class="r data">28</td>
+<td class="r data">8.899999619</td>
+<td class="r data">7.71999979</td>
+<td class="data">Buckingham</td>
+<td class="r data">64</td>
+<td class="data">male</td>
+<td class="r data">68</td>
+<td class="r data">183</td>
+<td class="data">medium</td>
+<td class="r data">138</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">44</td>
+<td class="r data">41</td>
+<td class="r data">300</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Contents" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX8" class="proc_title_group">
+<p class="c proctitle">The CONTENTS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Contents Procedure</h1>
+<section>
+<h1 class="contentfolder toc">WORK.HAVE_FRAME</h1>
+<article aria-label="Attributes">
+<h1 class="contentitem toc">Attributes</h1>
+<table class="table" style="border-spacing: 0" aria-label="Attributes">
+<caption aria-label="Attributes"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Name</th>
+<td class="data">WORK.HAVE_FRAME</td>
+<th class="rowheader" scope="row">Observations</th>
+<td class="data">391</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Member Type</th>
+<td class="data">DATA</td>
+<th class="rowheader" scope="row">Variables</th>
+<td class="data">19</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Engine</th>
+<td class="data">V9</td>
+<th class="rowheader" scope="row">Indexes</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Created</th>
+<td class="data">05/11/2024 14:45:32</td>
+<th class="rowheader" scope="row">Observation Length</th>
+<td class="data">152</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Last Modified</th>
+<td class="data">05/11/2024 14:45:32</td>
+<th class="rowheader" scope="row">Deleted Observations</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Protection</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">Compressed</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Set Type</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">Sorted</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Label</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Data Representation</th>
+<td class="data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Encoding</th>
+<td class="data">utf-8  Unicode (UTF-8)</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX9" aria-label="Engine/Host Information">
+<h1 class="contentitem toc">Engine/Host Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Engine/Host Information">
+<caption aria-label="Engine/Host Information"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Engine/Host Dependent Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Data Set Page Size</th>
+<td class="data">131072</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Pages</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">First Data Page</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Max Obs per Page</th>
+<td class="data">861</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Obs in First Data Page</th>
+<td class="data">391</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Number of Data Set Repairs</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Filename</th>
+<td class="data">/saswork/SAS_work4B2600001624_odaws01-apse1.oda.sas.com/SAS_work845F00001624_odaws01-apse1.oda.sas.com/have_frame.sas7bdat</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Release Created</th>
+<td class="data">9.0401M7</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Host Created</th>
+<td class="data">Linux</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Inode Number</th>
+<td class="data">1074877274</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Access Permission</th>
+<td class="data">rw-r--r--</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Owner Name</th>
+<td class="data">u63845287</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size</th>
+<td class="data">256KB</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">File Size (bytes)</th>
+<td class="data">262144</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX10" aria-label="Variables">
+<h1 class="contentitem toc">Variables</h1>
+<table class="table" style="border-spacing: 0" aria-label="Variables">
+<caption aria-label="Variables"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Alphabetic List of Variables and Attributes</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="b header" scope="col">Variable</th>
+<th class="b header" scope="col">Type</th>
+<th class="r b header" scope="col">Len</th>
+<th class="b header" scope="col">Format</th>
+<th class="b header" scope="col">Informat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">age</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">bp.1d</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">bp.1s</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">bp.2d</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">bp.2s</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">chol</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">frame</td>
+<td class="data">Char</td>
+<td class="r data">6</td>
+<td class="data">$6.</td>
+<td class="data">$6.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">gender</td>
+<td class="data">Char</td>
+<td class="r data">6</td>
+<td class="data">$6.</td>
+<td class="data">$6.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">glyhb</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">hdl</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">height</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">hip</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">id</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">location</td>
+<td class="data">Char</td>
+<td class="r data">10</td>
+<td class="data">$10.</td>
+<td class="data">$10.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">ratio</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">stab.glu</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">time.ppn</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">waist</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">weight</td>
+<td class="data">Num</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Freq" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX11" class="proc_title_group">
+<p class="c proctitle">The FREQ Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Freq Procedure</h1>
+<section>
+<h1 class="contentfolder toc">Table frame</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">frame</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+<th class="r b header" scope="col">Cumulative<br/>Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">large</th>
+<td class="r data">103</td>
+<td class="r data">26.34</td>
+<td class="r data">103</td>
+<td class="r data">26.34</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">medium</th>
+<td class="r data">184</td>
+<td class="r data">47.06</td>
+<td class="r data">287</td>
+<td class="r data">73.40</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">small</th>
+<td class="r data">104</td>
+<td class="r data">26.60</td>
+<td class="r data">391</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Freq" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX12" class="proc_title_group">
+<p class="c proctitle">The FREQ Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Freq Procedure</h1>
+<section>
+<h1 class="contentfolder toc">Table frame</h1>
+<article aria-label="One-Way Frequencies">
+<h1 class="contentitem toc">One-Way Frequencies</h1>
+<table class="table" style="border-spacing: 0" aria-label="One-Way Frequencies">
+<caption aria-label="One-Way Frequencies"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">frame</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col">Percent</th>
+<th class="r b header" scope="col">Cumulative<br/>Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">large</th>
+<td class="r data">103</td>
+<td class="r data">26.34</td>
+<td class="r data">103</td>
+<td class="r data">26.34</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">medium</th>
+<td class="r data">184</td>
+<td class="r data">47.06</td>
+<td class="r data">287</td>
+<td class="r data">73.40</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">small</th>
+<td class="r data">104</td>
+<td class="r data">26.60</td>
+<td class="r data">391</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX13" aria-label="Data Set WORK.HAVE_FRAME">
+<h1 class="contentitem toc">Data Set WORK.HAVE_FRAME</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.HAVE_FRAME">
+<caption aria-label="Data Set WORK.HAVE_FRAME"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">id</th>
+<th class="r header" scope="col">chol</th>
+<th class="r header" scope="col">stab.glu</th>
+<th class="r header" scope="col">hdl</th>
+<th class="r header" scope="col">ratio</th>
+<th class="r header" scope="col">glyhb</th>
+<th class="header" scope="col">location</th>
+<th class="r header" scope="col">age</th>
+<th class="header" scope="col">gender</th>
+<th class="r header" scope="col">weight</th>
+<th class="r header" scope="col">height</th>
+<th class="header" scope="col">frame</th>
+<th class="r header" scope="col">bp.1s</th>
+<th class="r header" scope="col">bp.1d</th>
+<th class="r header" scope="col">bp.2s</th>
+<th class="r header" scope="col">bp.2d</th>
+<th class="r header" scope="col">waist</th>
+<th class="r header" scope="col">hip</th>
+<th class="r header" scope="col">time.ppn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1000</td>
+<td class="r data">203</td>
+<td class="r data">82</td>
+<td class="r data">56</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.309999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">46</td>
+<td class="data">female</td>
+<td class="r data">62</td>
+<td class="r data">121</td>
+<td class="data">medium</td>
+<td class="r data">118</td>
+<td class="r data">59</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">29</td>
+<td class="r data">38</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">1001</td>
+<td class="r data">165</td>
+<td class="r data">97</td>
+<td class="r data">24</td>
+<td class="r data">6.900000095</td>
+<td class="r data">4.440000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">29</td>
+<td class="data">female</td>
+<td class="r data">64</td>
+<td class="r data">218</td>
+<td class="data">large</td>
+<td class="r data">112</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">48</td>
+<td class="r data">360</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">1002</td>
+<td class="r data">228</td>
+<td class="r data">92</td>
+<td class="r data">37</td>
+<td class="r data">6.199999809</td>
+<td class="r data">4.639999867</td>
+<td class="data">Buckingham</td>
+<td class="r data">58</td>
+<td class="data">female</td>
+<td class="r data">61</td>
+<td class="r data">256</td>
+<td class="data">large</td>
+<td class="r data">190</td>
+<td class="r data">92</td>
+<td class="r data">185</td>
+<td class="r data">92</td>
+<td class="r data">49</td>
+<td class="r data">57</td>
+<td class="r data">180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">1003</td>
+<td class="r data">78</td>
+<td class="r data">93</td>
+<td class="r data">12</td>
+<td class="r data">6.5</td>
+<td class="r data">4.630000114</td>
+<td class="data">Buckingham</td>
+<td class="r data">67</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">119</td>
+<td class="data">large</td>
+<td class="r data">110</td>
+<td class="r data">50</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">33</td>
+<td class="r data">38</td>
+<td class="r data">480</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">1005</td>
+<td class="r data">249</td>
+<td class="r data">90</td>
+<td class="r data">28</td>
+<td class="r data">8.899999619</td>
+<td class="r data">7.71999979</td>
+<td class="data">Buckingham</td>
+<td class="r data">64</td>
+<td class="data">male</td>
+<td class="r data">68</td>
+<td class="r data">183</td>
+<td class="data">medium</td>
+<td class="r data">138</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">44</td>
+<td class="r data">41</td>
+<td class="r data">300</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">1008</td>
+<td class="r data">248</td>
+<td class="r data">94</td>
+<td class="r data">69</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.809999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">34</td>
+<td class="data">male</td>
+<td class="r data">71</td>
+<td class="r data">190</td>
+<td class="data">large</td>
+<td class="r data">132</td>
+<td class="r data">86</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">36</td>
+<td class="r data">42</td>
+<td class="r data">195</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">1011</td>
+<td class="r data">195</td>
+<td class="r data">92</td>
+<td class="r data">41</td>
+<td class="r data">4.800000191</td>
+<td class="r data">4.840000153</td>
+<td class="data">Buckingham</td>
+<td class="r data">30</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">191</td>
+<td class="data">medium</td>
+<td class="r data">161</td>
+<td class="r data">112</td>
+<td class="r data">161</td>
+<td class="r data">112</td>
+<td class="r data">46</td>
+<td class="r data">49</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">1015</td>
+<td class="r data">227</td>
+<td class="r data">75</td>
+<td class="r data">44</td>
+<td class="r data">5.199999809</td>
+<td class="r data">3.940000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">37</td>
+<td class="data">male</td>
+<td class="r data">59</td>
+<td class="r data">170</td>
+<td class="data">medium</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">34</td>
+<td class="r data">39</td>
+<td class="r data">1020</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">1016</td>
+<td class="r data">177</td>
+<td class="r data">87</td>
+<td class="r data">49</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.840000153</td>
+<td class="data">Buckingham</td>
+<td class="r data">45</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">166</td>
+<td class="data">large</td>
+<td class="r data">160</td>
+<td class="r data">80</td>
+<td class="r data">128</td>
+<td class="r data">86</td>
+<td class="r data">34</td>
+<td class="r data">40</td>
+<td class="r data">300</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">1022</td>
+<td class="r data">263</td>
+<td class="r data">89</td>
+<td class="r data">40</td>
+<td class="r data">6.599999905</td>
+<td class="r data">5.78000021</td>
+<td class="data">Buckingham</td>
+<td class="r data">55</td>
+<td class="data">female</td>
+<td class="r data">63</td>
+<td class="r data">202</td>
+<td class="data">small</td>
+<td class="r data">108</td>
+<td class="r data">72</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">45</td>
+<td class="r data">50</td>
+<td class="r data">240</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="r data">1024</td>
+<td class="r data">242</td>
+<td class="r data">82</td>
+<td class="r data">54</td>
+<td class="r data">4.5</td>
+<td class="r data">4.769999981</td>
+<td class="data">Louisa</td>
+<td class="r data">60</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">156</td>
+<td class="data">medium</td>
+<td class="r data">130</td>
+<td class="r data">90</td>
+<td class="r data">130</td>
+<td class="r data">90</td>
+<td class="r data">39</td>
+<td class="r data">45</td>
+<td class="r data">300</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="r data">1029</td>
+<td class="r data">215</td>
+<td class="r data">128</td>
+<td class="r data">34</td>
+<td class="r data">6.300000191</td>
+<td class="r data">4.96999979</td>
+<td class="data">Louisa</td>
+<td class="r data">38</td>
+<td class="data">female</td>
+<td class="r data">58</td>
+<td class="r data">195</td>
+<td class="data">medium</td>
+<td class="r data">102</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">42</td>
+<td class="r data">50</td>
+<td class="r data">90</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="r data">1030</td>
+<td class="r data">238</td>
+<td class="r data">75</td>
+<td class="r data">36</td>
+<td class="r data">6.599999905</td>
+<td class="r data">4.46999979</td>
+<td class="data">Louisa</td>
+<td class="r data">27</td>
+<td class="data">female</td>
+<td class="r data">60</td>
+<td class="r data">170</td>
+<td class="data">medium</td>
+<td class="r data">130</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">35</td>
+<td class="r data">41</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="r data">1031</td>
+<td class="r data">183</td>
+<td class="r data">79</td>
+<td class="r data">46</td>
+<td class="r data">4</td>
+<td class="r data">4.590000153</td>
+<td class="data">Louisa</td>
+<td class="r data">40</td>
+<td class="data">female</td>
+<td class="r data">59</td>
+<td class="r data">165</td>
+<td class="data">medium</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">37</td>
+<td class="r data">43</td>
+<td class="r data">60</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="r data">1035</td>
+<td class="r data">191</td>
+<td class="r data">76</td>
+<td class="r data">30</td>
+<td class="r data">6.400000095</td>
+<td class="r data">4.670000076</td>
+<td class="data">Louisa</td>
+<td class="r data">36</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">183</td>
+<td class="data">medium</td>
+<td class="r data">100</td>
+<td class="r data">66</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">36</td>
+<td class="r data">40</td>
+<td class="r data">225</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="r data">1036</td>
+<td class="r data">213</td>
+<td class="r data">83</td>
+<td class="r data">47</td>
+<td class="r data">4.5</td>
+<td class="r data">3.410000086</td>
+<td class="data">Louisa</td>
+<td class="r data">33</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">157</td>
+<td class="data">medium</td>
+<td class="r data">130</td>
+<td class="r data">90</td>
+<td class="r data">120</td>
+<td class="r data">96</td>
+<td class="r data">37</td>
+<td class="r data">41</td>
+<td class="r data">240</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="r data">1037</td>
+<td class="r data">255</td>
+<td class="r data">78</td>
+<td class="r data">38</td>
+<td class="r data">6.699999809</td>
+<td class="r data">4.329999924</td>
+<td class="data">Louisa</td>
+<td class="r data">50</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">183</td>
+<td class="data">medium</td>
+<td class="r data">130</td>
+<td class="r data">100</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">37</td>
+<td class="r data">43</td>
+<td class="r data">180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="r data">1041</td>
+<td class="r data">230</td>
+<td class="r data">112</td>
+<td class="r data">64</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.53000021</td>
+<td class="data">Louisa</td>
+<td class="r data">20</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">159</td>
+<td class="data">medium</td>
+<td class="r data">100</td>
+<td class="r data">90</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">31</td>
+<td class="r data">39</td>
+<td class="r data">1440</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="r data">1045</td>
+<td class="r data">194</td>
+<td class="r data">81</td>
+<td class="r data">36</td>
+<td class="r data">5.400000095</td>
+<td class="r data">5.28000021</td>
+<td class="data">Louisa</td>
+<td class="r data">36</td>
+<td class="data">male</td>
+<td class="r data">64</td>
+<td class="r data">126</td>
+<td class="data">medium</td>
+<td class="r data">110</td>
+<td class="r data">76</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">30</td>
+<td class="r data">34</td>
+<td class="r data">120</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="r data">1250</td>
+<td class="r data">196</td>
+<td class="r data">206</td>
+<td class="r data">41</td>
+<td class="r data">4.800000191</td>
+<td class="r data">11.23999977</td>
+<td class="data">Buckingham</td>
+<td class="r data">62</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">196</td>
+<td class="data">large</td>
+<td class="r data">178</td>
+<td class="r data">90</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">51</td>
+<td class="r data">540</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article id="IDX14" aria-label="Data Set WORK.HAVE_FRAME">
+<h1 class="contentitem toc">Data Set WORK.HAVE_FRAME</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.HAVE_FRAME">
+<caption aria-label="Data Set WORK.HAVE_FRAME"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">id</th>
+<th class="r header" scope="col">chol</th>
+<th class="r header" scope="col">stab.glu</th>
+<th class="r header" scope="col">hdl</th>
+<th class="r header" scope="col">ratio</th>
+<th class="r header" scope="col">glyhb</th>
+<th class="header" scope="col">location</th>
+<th class="r header" scope="col">age</th>
+<th class="header" scope="col">gender</th>
+<th class="r header" scope="col">weight</th>
+<th class="r header" scope="col">height</th>
+<th class="header" scope="col">frame</th>
+<th class="r header" scope="col">bp.1s</th>
+<th class="r header" scope="col">bp.1d</th>
+<th class="r header" scope="col">bp.2s</th>
+<th class="r header" scope="col">bp.2d</th>
+<th class="r header" scope="col">waist</th>
+<th class="r header" scope="col">hip</th>
+<th class="r header" scope="col">time.ppn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1000</td>
+<td class="r data">203</td>
+<td class="r data">82</td>
+<td class="r data">56</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.309999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">46</td>
+<td class="data">female</td>
+<td class="r data">62</td>
+<td class="r data">121</td>
+<td class="data">M</td>
+<td class="r data">118</td>
+<td class="r data">59</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">29</td>
+<td class="r data">38</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">1001</td>
+<td class="r data">165</td>
+<td class="r data">97</td>
+<td class="r data">24</td>
+<td class="r data">6.900000095</td>
+<td class="r data">4.440000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">29</td>
+<td class="data">female</td>
+<td class="r data">64</td>
+<td class="r data">218</td>
+<td class="data">L</td>
+<td class="r data">112</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">48</td>
+<td class="r data">360</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">1002</td>
+<td class="r data">228</td>
+<td class="r data">92</td>
+<td class="r data">37</td>
+<td class="r data">6.199999809</td>
+<td class="r data">4.639999867</td>
+<td class="data">Buckingham</td>
+<td class="r data">58</td>
+<td class="data">female</td>
+<td class="r data">61</td>
+<td class="r data">256</td>
+<td class="data">L</td>
+<td class="r data">190</td>
+<td class="r data">92</td>
+<td class="r data">185</td>
+<td class="r data">92</td>
+<td class="r data">49</td>
+<td class="r data">57</td>
+<td class="r data">180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">1003</td>
+<td class="r data">78</td>
+<td class="r data">93</td>
+<td class="r data">12</td>
+<td class="r data">6.5</td>
+<td class="r data">4.630000114</td>
+<td class="data">Buckingham</td>
+<td class="r data">67</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">119</td>
+<td class="data">L</td>
+<td class="r data">110</td>
+<td class="r data">50</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">33</td>
+<td class="r data">38</td>
+<td class="r data">480</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">1005</td>
+<td class="r data">249</td>
+<td class="r data">90</td>
+<td class="r data">28</td>
+<td class="r data">8.899999619</td>
+<td class="r data">7.71999979</td>
+<td class="data">Buckingham</td>
+<td class="r data">64</td>
+<td class="data">male</td>
+<td class="r data">68</td>
+<td class="r data">183</td>
+<td class="data">M</td>
+<td class="r data">138</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">44</td>
+<td class="r data">41</td>
+<td class="r data">300</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">1008</td>
+<td class="r data">248</td>
+<td class="r data">94</td>
+<td class="r data">69</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.809999943</td>
+<td class="data">Buckingham</td>
+<td class="r data">34</td>
+<td class="data">male</td>
+<td class="r data">71</td>
+<td class="r data">190</td>
+<td class="data">L</td>
+<td class="r data">132</td>
+<td class="r data">86</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">36</td>
+<td class="r data">42</td>
+<td class="r data">195</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">1011</td>
+<td class="r data">195</td>
+<td class="r data">92</td>
+<td class="r data">41</td>
+<td class="r data">4.800000191</td>
+<td class="r data">4.840000153</td>
+<td class="data">Buckingham</td>
+<td class="r data">30</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">191</td>
+<td class="data">M</td>
+<td class="r data">161</td>
+<td class="r data">112</td>
+<td class="r data">161</td>
+<td class="r data">112</td>
+<td class="r data">46</td>
+<td class="r data">49</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">1015</td>
+<td class="r data">227</td>
+<td class="r data">75</td>
+<td class="r data">44</td>
+<td class="r data">5.199999809</td>
+<td class="r data">3.940000057</td>
+<td class="data">Buckingham</td>
+<td class="r data">37</td>
+<td class="data">male</td>
+<td class="r data">59</td>
+<td class="r data">170</td>
+<td class="data">M</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">34</td>
+<td class="r data">39</td>
+<td class="r data">1020</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">1016</td>
+<td class="r data">177</td>
+<td class="r data">87</td>
+<td class="r data">49</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.840000153</td>
+<td class="data">Buckingham</td>
+<td class="r data">45</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">166</td>
+<td class="data">L</td>
+<td class="r data">160</td>
+<td class="r data">80</td>
+<td class="r data">128</td>
+<td class="r data">86</td>
+<td class="r data">34</td>
+<td class="r data">40</td>
+<td class="r data">300</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">1022</td>
+<td class="r data">263</td>
+<td class="r data">89</td>
+<td class="r data">40</td>
+<td class="r data">6.599999905</td>
+<td class="r data">5.78000021</td>
+<td class="data">Buckingham</td>
+<td class="r data">55</td>
+<td class="data">female</td>
+<td class="r data">63</td>
+<td class="r data">202</td>
+<td class="data">S</td>
+<td class="r data">108</td>
+<td class="r data">72</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">45</td>
+<td class="r data">50</td>
+<td class="r data">240</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="r data">1024</td>
+<td class="r data">242</td>
+<td class="r data">82</td>
+<td class="r data">54</td>
+<td class="r data">4.5</td>
+<td class="r data">4.769999981</td>
+<td class="data">Louisa</td>
+<td class="r data">60</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">156</td>
+<td class="data">M</td>
+<td class="r data">130</td>
+<td class="r data">90</td>
+<td class="r data">130</td>
+<td class="r data">90</td>
+<td class="r data">39</td>
+<td class="r data">45</td>
+<td class="r data">300</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="r data">1029</td>
+<td class="r data">215</td>
+<td class="r data">128</td>
+<td class="r data">34</td>
+<td class="r data">6.300000191</td>
+<td class="r data">4.96999979</td>
+<td class="data">Louisa</td>
+<td class="r data">38</td>
+<td class="data">female</td>
+<td class="r data">58</td>
+<td class="r data">195</td>
+<td class="data">M</td>
+<td class="r data">102</td>
+<td class="r data">68</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">42</td>
+<td class="r data">50</td>
+<td class="r data">90</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="r data">1030</td>
+<td class="r data">238</td>
+<td class="r data">75</td>
+<td class="r data">36</td>
+<td class="r data">6.599999905</td>
+<td class="r data">4.46999979</td>
+<td class="data">Louisa</td>
+<td class="r data">27</td>
+<td class="data">female</td>
+<td class="r data">60</td>
+<td class="r data">170</td>
+<td class="data">M</td>
+<td class="r data">130</td>
+<td class="r data">80</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">35</td>
+<td class="r data">41</td>
+<td class="r data">720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="r data">1031</td>
+<td class="r data">183</td>
+<td class="r data">79</td>
+<td class="r data">46</td>
+<td class="r data">4</td>
+<td class="r data">4.590000153</td>
+<td class="data">Louisa</td>
+<td class="r data">40</td>
+<td class="data">female</td>
+<td class="r data">59</td>
+<td class="r data">165</td>
+<td class="data">M</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">37</td>
+<td class="r data">43</td>
+<td class="r data">60</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="r data">1035</td>
+<td class="r data">191</td>
+<td class="r data">76</td>
+<td class="r data">30</td>
+<td class="r data">6.400000095</td>
+<td class="r data">4.670000076</td>
+<td class="data">Louisa</td>
+<td class="r data">36</td>
+<td class="data">male</td>
+<td class="r data">69</td>
+<td class="r data">183</td>
+<td class="data">M</td>
+<td class="r data">100</td>
+<td class="r data">66</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">36</td>
+<td class="r data">40</td>
+<td class="r data">225</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="r data">1036</td>
+<td class="r data">213</td>
+<td class="r data">83</td>
+<td class="r data">47</td>
+<td class="r data">4.5</td>
+<td class="r data">3.410000086</td>
+<td class="data">Louisa</td>
+<td class="r data">33</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">157</td>
+<td class="data">M</td>
+<td class="r data">130</td>
+<td class="r data">90</td>
+<td class="r data">120</td>
+<td class="r data">96</td>
+<td class="r data">37</td>
+<td class="r data">41</td>
+<td class="r data">240</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="r data">1037</td>
+<td class="r data">255</td>
+<td class="r data">78</td>
+<td class="r data">38</td>
+<td class="r data">6.699999809</td>
+<td class="r data">4.329999924</td>
+<td class="data">Louisa</td>
+<td class="r data">50</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">183</td>
+<td class="data">M</td>
+<td class="r data">130</td>
+<td class="r data">100</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">37</td>
+<td class="r data">43</td>
+<td class="r data">180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="r data">1041</td>
+<td class="r data">230</td>
+<td class="r data">112</td>
+<td class="r data">64</td>
+<td class="r data">3.599999905</td>
+<td class="r data">4.53000021</td>
+<td class="data">Louisa</td>
+<td class="r data">20</td>
+<td class="data">male</td>
+<td class="r data">67</td>
+<td class="r data">159</td>
+<td class="data">M</td>
+<td class="r data">100</td>
+<td class="r data">90</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">31</td>
+<td class="r data">39</td>
+<td class="r data">1440</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="r data">1045</td>
+<td class="r data">194</td>
+<td class="r data">81</td>
+<td class="r data">36</td>
+<td class="r data">5.400000095</td>
+<td class="r data">5.28000021</td>
+<td class="data">Louisa</td>
+<td class="r data">36</td>
+<td class="data">male</td>
+<td class="r data">64</td>
+<td class="r data">126</td>
+<td class="data">M</td>
+<td class="r data">110</td>
+<td class="r data">76</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">30</td>
+<td class="r data">34</td>
+<td class="r data">120</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="r data">1250</td>
+<td class="r data">196</td>
+<td class="r data">206</td>
+<td class="r data">41</td>
+<td class="r data">4.800000191</td>
+<td class="r data">11.23999977</td>
+<td class="data">Buckingham</td>
+<td class="r data">62</td>
+<td class="data">female</td>
+<td class="r data">65</td>
+<td class="r data">196</td>
+<td class="data">L</td>
+<td class="r data">178</td>
+<td class="r data">90</td>
+<td class="r data">.</td>
+<td class="r data">.</td>
+<td class="r data">46</td>
+<td class="r data">51</td>
+<td class="r data">540</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Means" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX15" class="proc_title_group">
+<p class="c proctitle">The MEANS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Means Procedure</h1>
+<article aria-label="Summary statistics">
+<h1 class="contentitem toc">Summary statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Summary statistics">
+<caption aria-label="Summary statistics"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">Variable</th>
+<th class="r b header" scope="col">N</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="data">
+<div class="stacked-cell">
+<div>id</div>
+<div>chol</div>
+<div>stab.glu</div>
+<div>hdl</div>
+<div>ratio</div>
+<div>glyhb</div>
+<div>age</div>
+<div>weight</div>
+<div>height</div>
+<div>bp.1s</div>
+<div>bp.1d</div>
+<div>bp.2s</div>
+<div>bp.2d</div>
+<div>waist</div>
+<div>hip</div>
+<div>time.ppn</div>
+</div>
+</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">403</div>
+<div class="r">402</div>
+<div class="r">403</div>
+<div class="r">402</div>
+<div class="r">402</div>
+<div class="r">390</div>
+<div class="r">403</div>
+<div class="r">398</div>
+<div class="r">402</div>
+<div class="r">398</div>
+<div class="r">398</div>
+<div class="r">141</div>
+<div class="r">141</div>
+<div class="r">401</div>
+<div class="r">401</div>
+<div class="r">400</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">15978.31</div>
+<div class="r">207.8457711</div>
+<div class="r">106.6724566</div>
+<div class="r">50.4452736</div>
+<div class="r">4.5216418</div>
+<div class="r">5.5897692</div>
+<div class="r">46.8511166</div>
+<div class="r">66.0201005</div>
+<div class="r">177.5920398</div>
+<div class="r">136.9045226</div>
+<div class="r">83.3216080</div>
+<div class="r">152.3829787</div>
+<div class="r">92.5248227</div>
+<div class="r">37.9002494</div>
+<div class="r">43.0399002</div>
+<div class="r">341.2500000</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">11881.12</div>
+<div class="r">44.4455574</div>
+<div class="r">53.0766545</div>
+<div class="r">17.2626257</div>
+<div class="r">1.7278861</div>
+<div class="r">2.2425948</div>
+<div class="r">16.3123330</div>
+<div class="r">3.9185149</div>
+<div class="r">40.3406657</div>
+<div class="r">22.7410332</div>
+<div class="r">13.5892269</div>
+<div class="r">21.7129519</div>
+<div class="r">11.5551977</div>
+<div class="r">5.7293128</div>
+<div class="r">5.6567132</div>
+<div class="r">309.5409529</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1000.00</div>
+<div class="r">78.0000000</div>
+<div class="r">48.0000000</div>
+<div class="r">12.0000000</div>
+<div class="r">1.5000000</div>
+<div class="r">2.6800001</div>
+<div class="r">19.0000000</div>
+<div class="r">52.0000000</div>
+<div class="r">99.0000000</div>
+<div class="r">90.0000000</div>
+<div class="r">48.0000000</div>
+<div class="r">110.0000000</div>
+<div class="r">60.0000000</div>
+<div class="r">26.0000000</div>
+<div class="r">30.0000000</div>
+<div class="r">5.0000000</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">41756.00</div>
+<div class="r">443.0000000</div>
+<div class="r">385.0000000</div>
+<div class="r">120.0000000</div>
+<div class="r">19.2999992</div>
+<div class="r">16.1100006</div>
+<div class="r">92.0000000</div>
+<div class="r">76.0000000</div>
+<div class="r">325.0000000</div>
+<div class="r">250.0000000</div>
+<div class="r">124.0000000</div>
+<div class="r">238.0000000</div>
+<div class="r">124.0000000</div>
+<div class="r">56.0000000</div>
+<div class="r">64.0000000</div>
+<div class="r">1560.00</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Means" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX16" class="proc_title_group">
+<p class="c proctitle">The MEANS Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Means Procedure</h1>
+<article aria-label="Summary statistics">
+<h1 class="contentitem toc">Summary statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Summary statistics">
+<caption aria-label="Summary statistics"></caption>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Analysis Variable : age</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">N</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">403</td>
+<td class="r data">46.8511166</td>
+<td class="r data">16.3123330</td>
+<td class="r data">19.0000000</td>
+<td class="r data">92.0000000</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Corr" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX17" class="proc_title_group">
+<p class="c proctitle">The CORR Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Corr Procedure</h1>
+<article aria-label="Variables Information">
+<h1 class="contentitem toc">Variables Information</h1>
+<table class="table" style="border-spacing: 0" aria-label="Variables Information">
+<caption aria-label="Variables Information"></caption>
+<colgroup><col/></colgroup><colgroup><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">2  Variables:</th>
+<td class="data">glyhb    ratio</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX18" aria-label="Simple Statistics">
+<h1 class="contentitem toc">Simple Statistics</h1>
+<table class="table" style="border-spacing: 0" aria-label="Simple Statistics">
+<caption aria-label="Simple Statistics"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Simple Statistics</th>
+</tr>
+<tr>
+<th class="b header" scope="col">Variable</th>
+<th class="r b header" scope="col">N</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+<th class="r b header" scope="col">Sum</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">glyhb</th>
+<td class="r data">390</td>
+<td class="r data">5.58977</td>
+<td class="r data">2.24259</td>
+<td class="r data">2180</td>
+<td class="r data">2.68000</td>
+<td class="r data">16.11000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">ratio</th>
+<td class="r data">402</td>
+<td class="r data">4.52164</td>
+<td class="r data">1.72789</td>
+<td class="r data">1818</td>
+<td class="r data">1.50000</td>
+<td class="r data">19.30000</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX19" aria-label="Pearson Correlations">
+<h1 class="contentitem toc">Pearson Correlations</h1>
+<table class="table" style="border-spacing: 0" aria-label="Pearson Correlations">
+<caption aria-label="Pearson Correlations"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Pearson Correlation Coefficients<br/>Prob &gt; |r| under H0: Rho=0<br/>Number of Observations</th>
+</tr>
+<tr>
+<th class="c headerempty" scope="col">&#160;</th>
+<th class="r b header" scope="col">glyhb</th>
+<th class="r b header" scope="col">ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">glyhb</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+<div class="r">390</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.32866</div>
+<div class="r">&lt;.0001</div>
+<div class="r">389</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">ratio</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.32866</div>
+<div class="r">&lt;.0001</div>
+<div class="r">389</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+<div class="r">402</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Freq" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX20" class="proc_title_group">
+<p class="c proctitle">The FREQ Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Freq Procedure</h1>
+<section>
+<h1 class="contentfolder toc">Table gender * frame</h1>
+<article aria-label="Cross-Tabular Freq Table">
+<h1 class="contentitem toc">Cross-Tabular Freq Table</h1>
+<table role="presentation">
+<tr>
+<td class="c t"><table class="table" style="border-spacing: 0">
+<colgroup><col/></colgroup>
+<tbody>
+<tr>
+<th class="t header" scope="col">
+<div class="stacked-cell">
+<div class="t">Frequency</div>
+<div class="t">Expected</div>
+<div class="t">Percent</div>
+<div class="t">Row Pct</div>
+<div class="t">Col Pct</div>
+</div>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="table" style="border-spacing: 0" aria-label="Cross-Tabular Freq Table">
+<caption aria-label="Cross-Tabular Freq Table"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="5" scope="colgroup">Table&#160;of&#160;gender&#160;by&#160;frame</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">gender</th>
+<th class="c b header" colspan="4" scope="colgroup">frame</th>
+</tr>
+<tr>
+<th class="r header" scope="col">large</th>
+<th class="r header" scope="col">medium</th>
+<th class="r header" scope="col">small</th>
+<th class="r header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="t rowheader" scope="row">female</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">42</div>
+<div class="r t">59.798</div>
+<div class="r t">10.74</div>
+<div class="r t">18.50</div>
+<div class="r t">40.78</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">116</div>
+<div class="r t">106.82</div>
+<div class="r t">29.67</div>
+<div class="r t">51.10</div>
+<div class="r t">63.04</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">69</div>
+<div class="r t">60.379</div>
+<div class="r t">17.65</div>
+<div class="r t">30.40</div>
+<div class="r t">66.35</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">227</div>
+<div class="r t">&#160;</div>
+<div class="r t">58.06</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">male</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">61</div>
+<div class="r t">43.202</div>
+<div class="r t">15.60</div>
+<div class="r t">37.20</div>
+<div class="r t">59.22</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">68</div>
+<div class="r t">77.176</div>
+<div class="r t">17.39</div>
+<div class="r t">41.46</div>
+<div class="r t">36.96</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">35</div>
+<div class="r t">43.621</div>
+<div class="r t">8.95</div>
+<div class="r t">21.34</div>
+<div class="r t">33.65</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">164</div>
+<div class="r t">&#160;</div>
+<div class="r t">41.94</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">Total</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">103</div>
+<div class="r t">26.34</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">184</div>
+<div class="r t">47.06</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">104</div>
+<div class="r t">26.60</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">391</div>
+<div class="r t">100.00</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="c header" colspan="5" scope="colgroup">Frequency&#160;Missing&#160;=&#160;12</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c proctitle">Statistics for Table of gender by frame</p>
+</div>
+<article id="IDX21" aria-label="Chi-Square Tests">
+<h1 class="contentitem toc">Chi-Square Tests</h1>
+<table class="table" style="border-spacing: 0" aria-label="Chi-Square Tests">
+<caption aria-label="Chi-Square Tests"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">Statistic</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Prob</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Chi-Square</th>
+<td class="r data">2</td>
+<td class="r data">17.4440</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Likelihood Ratio Chi-Square</th>
+<td class="r data">2</td>
+<td class="r data">17.3199</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Mantel-Haenszel Chi-Square</th>
+<td class="r data">1</td>
+<td class="r data">13.8119</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Phi Coefficient</th>
+<td class="r data">&#160;</td>
+<td class="r data">0.2112</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Contingency Coefficient</th>
+<td class="r data">&#160;</td>
+<td class="r data">0.2067</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Cramer&apos;s V</th>
+<td class="r data">&#160;</td>
+<td class="r data">0.2112</td>
+<td class="r data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<div class="proc_note_group">
+<p class="c proctitle">Sample Size = 391<br/>Frequency Missing = 12</p>
+</div>
+</section>
+</section>
+<section data-name="Freq" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX22" class="proc_title_group">
+<p class="c proctitle">The FREQ Procedure</p>
+</div>
+<h1 class="contentprocname toc">The Freq Procedure</h1>
+<section>
+<h1 class="contentfolder toc">Table gender * frame</h1>
+<article aria-label="Cross-Tabular Freq Table">
+<h1 class="contentitem toc">Cross-Tabular Freq Table</h1>
+<table role="presentation">
+<tr>
+<td class="c t"><table class="table" style="border-spacing: 0">
+<colgroup><col/></colgroup>
+<tbody>
+<tr>
+<th class="t header" scope="col">
+<div class="stacked-cell">
+<div class="t">Frequency</div>
+<div class="t">Percent</div>
+<div class="t">Row Pct</div>
+<div class="t">Col Pct</div>
+</div>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="table" style="border-spacing: 0" aria-label="Cross-Tabular Freq Table">
+<caption aria-label="Cross-Tabular Freq Table"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="5" scope="colgroup">Table&#160;of&#160;gender&#160;by&#160;frame</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">gender</th>
+<th class="c b header" colspan="4" scope="colgroup">frame</th>
+</tr>
+<tr>
+<th class="r header" scope="col">L</th>
+<th class="r header" scope="col">M</th>
+<th class="r header" scope="col">S</th>
+<th class="r header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="t rowheader" scope="row">female</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">42</div>
+<div class="r t">10.74</div>
+<div class="r t">18.50</div>
+<div class="r t">40.78</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">116</div>
+<div class="r t">29.67</div>
+<div class="r t">51.10</div>
+<div class="r t">63.04</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">69</div>
+<div class="r t">17.65</div>
+<div class="r t">30.40</div>
+<div class="r t">66.35</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">227</div>
+<div class="r t">58.06</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">male</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">61</div>
+<div class="r t">15.60</div>
+<div class="r t">37.20</div>
+<div class="r t">59.22</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">68</div>
+<div class="r t">17.39</div>
+<div class="r t">41.46</div>
+<div class="r t">36.96</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">35</div>
+<div class="r t">8.95</div>
+<div class="r t">21.34</div>
+<div class="r t">33.65</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">164</div>
+<div class="r t">41.94</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">Total</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">103</div>
+<div class="r t">26.34</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">184</div>
+<div class="r t">47.06</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">104</div>
+<div class="r t">26.60</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">391</div>
+<div class="r t">100.00</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</article>
+</section>
+</section>
+<section data-name="SGPlot" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The SGPlot Procedure</h1>
+<article id="IDX23" aria-label="The SGPlot Procedure">
+<h1 class="contentitem toc">The SGPlot Procedure</h1>
+<div class="c">
+<img style="height: 400px; width: 600px" alt="The SGPlot Procedure" src="data:image/png;base64,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jwVbPigcPXr0b3/72zYZCgDiclohzHwjWiqVOumr0QCgo2vFU6MqCEDn04oQbtq06fzzz8/Kykq10HaTAUAMWhHChQsXLl269LPPPku30HaTAUAMWhHCnJyca6+9tmvXrm03DQDErBUh/M53vrNy5cq2GwUA4teKEC5YsGD16tWpv9Z2k7VPX5s4MRWv+rr6pP/Q/LPefOPVh1cuj/PX5vXXX0/6Dw0dRivOUO8VwSiK0k3pJzY8fdHFl8S24tfGnBfbWrSRLl26LFn2vRvmLohtxWsnjYttLejofNcoAEFrRQjr6uqWLl06ZMiQbt26RVE0Z86cjRs3ttlgABCHVoTwpptuGj9+fHl5+bFjx6Iomjdv3ne/+902GwwA4tCKEL744otXX311jx49MhcnTJhQUVHRNlMBQExaEcJJkyatX79+//79URQ1NDQ8+eSTU6dObbPBACAOrQjhunXr3nnnnTFjxnTr1m348OF79uwpLS1tu8kAIAat+PhEz549V69evXr16rabBgBi5uMTAAStFSH8yU9+cvPNNzdfnDNnzoYNG9pgJACITytC+OCDD377299uvnjfffd973vfa4ORACA+rQjhkSNH+vfv33xx8ODB9fW+BhOAjq0VIbz55pt/+MMfHjhwoKmp6cCBAw899NBNN93UdpMBQAxaEcKVK1d269Zt3LhxeXl548ePz8/PX7VqVdtNBgAxaMXHJ3JycpYvX758+fK2mwYAYtaKR4RXXXVV280BAIloRQhLSkpKS0t37NjRdtMAQMxa8dToDTfc8PmDztYLQIfmDPUABM1XrAEQNGeoByBozlAPQNCcoR6AoDlDPQBBc4Z6AILmDPUABM3HJwAI2mmFcN++fVdffXVhYeHMmTMPHTrU1jMBQGxOK4R33333/Pnzq6qqZs+evWzZsraeCQBic1qvET777LNPPPFEt27drr766kWLFrWf98jct3TpTzf8NM4Vjx47FudyALS10wrhvn37unfvHkVRbm5uu/rs4MEDB2fMnlc8dUZsK95yfXFsawEQg1a8azSjvX31dn5BYdGZ/WJbLtUlFdtaAMTAu0YBCNrpPiJMpVKn/Lm9PUAEgFY5rRCqHQCdladGAQiaEAIQNCEEIGhCCEDQhBCAoAkhAEETQgCCJoQABE0IAQiaEAIQNCEEIGhCCEDQhBCAoAkhAEFr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"/>
+</div>
+</article>
+</section>
+<section data-name="SGPlot" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The SGPlot Procedure</h1>
+<article id="IDX24" aria-label="The SGPlot Procedure">
+<h1 class="contentitem toc">The SGPlot Procedure</h1>
+<div class="c">
+<img style="height: 400px; width: 600px" alt="The SGPlot Procedure" src="data:image/png;base64,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"/>
+</div>
+</article>
+</section>
+<section data-name="SGPlot" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The SGPlot Procedure</h1>
+<article id="IDX25" aria-label="The SGPlot Procedure">
+<h1 class="contentitem toc">The SGPlot Procedure</h1>
+<div class="c">
+<img style="height: 400px; width: 600px" alt="The SGPlot Procedure" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQCAIAAAD9V4nPAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAXcElEQVR4nO3df3SV9Z3g8e8lEH5FYxRFxUos/iAJlW2jZdRVq8MilMG2x54DqytH8qOz1Vq2olQUR9pJ1Gl7aF1nM8FRr7gz4zpgHbFBux2xY+2023RaSCDBUWRFpRUIBMoNP4Tc/SPnZDPQOgTJfZJ8X6/jH/d5npv7fMCc++Z57o8ntW7dugAAsRoaQrj44ouTHgMAEtDU1DQk6RkAIElCCEDUhBCAqAkhAFETQgCiJoQARE0IAYja0KQH6LW/XfH9vXv3Jj0FAAPG2WeOnTXjuj+0deCFcO/evX86b27SUwAwYCxLP/UhW50aBSBqQghA1AbeqdH+Zv369c8880yyM4wcNeqeRYuSnQFggBLCj6qlpeV//f3Kqdddn9QA+/fve27F/6j606+eceropGYAGLiE8ASYcP5FFf91flJ7392+67kVf5PU3gEGOq8RAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgasmEsLm5ecSIEd2L6XS6rKysrKwsnU4nMg8A0Rqa+10eOHCgsrLywIEDXYvpdLqurq6hoSGVSs2ZMyeEMG/evNxPBUCcEjgivOeee2bPnt29WF9fX1tbW1xcPH78+JqammXLluV+JACilesQvvLKK+vWrbvjjju617S2tpaXl3fdnjx5cktLS45HAiBmOT012t7ePn/+/K6zoN0rM5lMYWFh1+2ioqKOjo6eP3L48OFsNvv/l3v8IAB8dDkN4a233rpo0aKPfexjPVcWFBS0t7ePGTMmhJDJZAoKCnpufeUnP337nXe7F0eOGJ6bUQGIRE5D+PTTTz/99NM33nhj12Iqlcpms6WlpY2NjTNmzAghNDc3l5SU9PyRqZ+56ogHWZZ+KjfTAhCDnIaw50nOrgqGEKqrqxcvXjxx4sS8vLyFCxdWVVXlciQAIpfAxyeOUFFREUKYOXNmNptdsGBBZWVl0hMBEJHEQtjz6LCioqIrhwCQY75iDYCoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoDU16AD6qQx988MEHB59/7tmTC4YnOMb06dMLCwsTHADg+AjhgNfRkdm/f/+z3/9+KpXYDK+9+srKf3jxumsvT2wCgOMlhIPB8OHD//zbdQkOcOMXpn5w6HCCAwAcN68RAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABELach/NGPfnTttdcWFhaeeeaZc+fO3bZtW9f6dDpdVlZWVlaWTqdzOQ8A5DSEjzzySGVl5aZNm9avX3/GGWfccsstIYR0Ol1XV9fQ0LB69epHH31UCwHIpZx+s8yqVau6b993333jxo0LIdTX19fW1hYXF4cQampq7r333nnz5uVyKgBilsxrhLt37166dOlVV10VQmhtbS0vL+9aP3ny5JaWlkRGAiBOCXzXaCqVCiGccsopv/jFL0IImUym+6oFRUVFHR0dPe+8vqV1e9vO7sX8YcNyOCkAg18CITx06FBbW1s6na6srHz11VcLCgra29vHjBkTQshkMgUFBT3vXFRUlJ+f372Yl5e3vnVjricGYPBK4NRoXl7eGWecceutt/76178OIZSWljY2NnZtam5uLikp6XnncWedeeH5E7r/m3Becc7nBWAwy2kIZ82atXLlyra2tl27dn3ve9+bPn16CKG6unrx4sWbN2/esmXLwoULq6qqcjkSAJHL6anR22+//cEHH6yqqhoxYsQXvvCFxx9/PIRQUVERQpg5c2Y2m12wYEFlZWUuRwIgcjkN4bRp06ZNm3b0+oqKiq4cAkCO+Yo1AKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSEEICoCSEAURNCAKImhABErRchTKVSR6y55pprTugwAJBrx39EuHHjxvfff/8EjgIAuTf0WO7UfSzY86DwU5/61KpVq/pkKADIlWMKYTabDSGkUqmuGwAwaPTi1KgKAjD49CKEDQ0NF1xwQV5eXqqHvpsMAHKgFyGsrq6+++679+3bl+2h7yYDgBzoRQiHDRt2/fXX5+fn9900AJBjvQjh/fffX1tb23ejAEDuHdO7RrtUVlaGEB5++OGeK50dBWBA60UINQ+Awcd3jQIQtV6EcO/evXfffff5558/fPjwEMJNN920YsWKPhsMAHKhFyG8+eabp0yZ0tTUdPDgwRDCvHnzvvGNb/TZYACQC70I4SuvvDJ9+vRRo0Z1LV5++eVbt27tm6kAIEd6EcKpU6em0+kdO3aEEDo6Oh577LFZs2b12WAAkAu9COETTzzx+uuvl5eXDx8+vKys7J133qmrq+u7yQAgB3rx8YmTTz754YcfPuJzhAAwoPn4BABR60UIn3zyyblz53Yv3nTTTcuXL++DkQAgd3oRwiVLltxzzz3di1//+te/+c1v9sFIAJA7vQjh/v37zz777O7F4uLiTCbTByMBQO70IoRz58791re+tXPnzs7Ozp07dz744IM333xz300GADnQixDW1tYOHz7805/+9OjRo6dMmVJQUPDAAw/03WQAkAO9+PjEsGHD7rvvvvvuu6/vpgGAHOvFEeG0adP6bg4ASEQvQlhVVVVXV9fS0tJ30wBAjvXi1Ojs2bOPXulqvQAMaK5QD0DUfMUaAFFzhXoAouYK9QBELadXqF+zZs111103ZsyYM84445Zbbmlra+tan06ny8rKysrK0ul0rx4QAD6inF6hfunSpXPmzNmwYcPmzZsvvfTSioqKEEI6na6rq2toaFi9evWjjz6qhQDkUk6vUP+DH/xg3rx5Y8eOHT169C233LJmzZoQQn19fW1tbXFx8fjx42tqapYtW9a7PwEAfASJXaG+qamptLQ0hNDa2lpeXt61cvLkyT6wD0Au9SKEJ9DevXvnz5//7W9/O4SQyWQKCwu71hcVFXV0dPS85+49e7rem9MllfJ5DwBOpGMK4fbt22+++eaf/exn06ZNe+yxx7q7dXy2bdt2ww03LFy48Oqrrw4hFBQUtLe3jxkzJoSQyWQKCgp63rn19Te2/vb97sURw/M/yq4B4AjHFMI777yzoqLi+eefX7169aJFi3r7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hBD6tR07dkydOrWwsPCRRx7peVS3c+fO8ePH79u3r3vNvn37iouLd+3aFUJ44okniouLx40b99JLL3Xf4dFHHz3llFOmTp3a1taWyz8C9HNCCP3aokWLPve5z7333ntbt27tuf7UU0+dPn36U0891b1m+fLls2bNKioqCiE0NTU1NjYuWbLkq1/9avcdmpubt2zZcs011yxatChn80P/53qE0K+NGzduw4YNp5xyygcffJCfn5/NZkMIqVQqm822tLR88Ytf3LBhQ9fipEmTVq1aNWHChK7FEMLBgwdHjhx5+PDhrh85cOBAfn7+9u3bP/nJT7777rsJ/8Ggf3A9Qujv2traTjrppBDCsGHDjthUWlp6zjnnrF69OoTQ0NBw0UUXTZgwoecd8vPzOzs7ey6GEIqKinbs2NHnc8PAIYTQr40dO7a9vT2EkMlkjt46f/78pUuXhhCWLl26YMGCD3+orkfYsWPHWWed1QeTwkAlhNCvzZgx44knnmhvb7/33nuP3vrZz3723XffXb58eUdHxxVXXPHhD7V48eI9e/bU19d//vOf75thYUASQujXampqfvjDH44fP76srOzoralU6vbbb6+qqrrjjjv+3YeaPHnyueee+/Of//z+++/vg0lhoPJmGRgYdu7cec4553R0dByxfu3atbNnz25pacnLy0tkMBjQvFkG+rvZs2c/++yze/bs+e53v3vJJZccsXXbtm233nrrww8/rIJw3IQQ+rU5c+bU1taeffbZL7/8cn19fc9NV1xxxdVXX3333XdPnz49qfFgEHBqFIB4OTUKQOyEEICoCSEAURNCAKImhABETQgBiJoQAhA1IQQgakIIQNSGhhCampqSHgMAkvH/ABjbTsZqUckbAAAAAElFTkSuQmCC"/>
+</div>
+</article>
+</section>
+</div>
+</body>
+</html>
